@@ -1,0 +1,52 @@
+$colors: (
+    'common': (
+        'white': #f0f0f0,
+        'white-2': #F4F4F5,
+        'white-3': rgba(240, 240, 240, 0.64),
+        'black': #000001,
+        'black-1': #10302a,
+        'black-2': #0d0d0d,
+        'black-3': #000,
+        'black-4': #405955,
+        'black-5': #111112,
+        'black-6': #333333,
+        'black-7': #121314,
+        'yellow': #fff112,
+        'yellow-2': #FFD500,
+        'green':  #9FB086,
+        'green-2': #0F766E,
+        'green-3': #d5ffdd,
+        'blue': #5956e9,
+        'nights': #7D5DFF,
+        'meteor': #E62415, 
+        'angry': #f14f44,
+        'sugar ': #FFFBF5,
+        'cream ': #b7ab98,
+        'pink ': #eb5939,
+    ), 
+    'grey': (
+        '1':#525252,
+        '2':#999,
+        '3':#f4f4f4,
+        '4':#aaa,
+        '5':#f3f1f2,
+        '6':#AFB7B6,
+        '7':#5c5c5c,
+        '8': #101010,
+    ),
+    'theme': (
+        'primary':  #9FB086,
+        'secondary': #0F766E,
+        '1': #134E4A,
+    ),
+    'border': (
+        '1': #eee,
+        '2': rgba(51, 51, 51, 0.8),
+        '3': rgba(255, 255, 255, 0.1),
+    )
+);
+
+
+$white : #f0f0f0;
+$black : #06302D;
+$theme-primary : #9FB086;

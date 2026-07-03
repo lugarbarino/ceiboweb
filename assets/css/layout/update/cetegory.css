@@ -1,0 +1,190 @@
+@import url(https://fonts.google.com/specimen/Manrope);
+/* transform */
+:root {
+  /**
+  @font family declaration
+  */
+  --tp-ff-body: "Manrope", sans-serif;
+  --tp-ff-heading: "Manrope", sans-serif;
+  --tp-ff-brand: "Manrope", sans-serif;
+  /**
+  @color declaration
+  */
+  --tp-common-white: #f0f0f0;
+  --tp-common-white-2: #F4F4F5;
+  --tp-common-white-3: rgba(240, 240, 240, 0.64);
+  --tp-common-black: #000001;
+  --tp-common-black-1: #10302a;
+  --tp-common-black-2: #0d0d0d;
+  --tp-common-black-3: #000;
+  --tp-common-black-4: #405955;
+  --tp-common-black-5: #111112;
+  --tp-common-black-6: #333333;
+  --tp-common-black-7: #121314;
+  --tp-common-yellow: #fff112;
+  --tp-common-yellow-2: #FFD500;
+  --tp-common-green: #9FB086;
+  --tp-common-green-2: #0F766E;
+  --tp-common-green-3: #d5ffdd;
+  --tp-common-blue: #5956e9;
+  --tp-common-nights: #7D5DFF;
+  --tp-common-meteor: #E62415;
+  --tp-common-angry: #f14f44;
+  --tp-common-sugar : #FFFBF5;
+  --tp-common-cream : #b7ab98;
+  --tp-common-pink : #eb5939;
+  --tp-grey-1: #525252;
+  --tp-grey-2: #999;
+  --tp-grey-3: #f4f4f4;
+  --tp-grey-4: #aaa;
+  --tp-grey-5: #f3f1f2;
+  --tp-grey-6: #AFB7B6;
+  --tp-grey-7: #5c5c5c;
+  --tp-grey-8: #101010;
+  --tp-theme-primary: #9FB086;
+  --tp-theme-secondary: #0F766E;
+  --tp-theme-1: #134E4A;
+  --tp-border-1: #eee;
+  --tp-border-2: rgba(51, 51, 51, 0.8);
+  --tp-border-3: rgba(255, 255, 255, 0.1);
+}
+
+/*----------------------------------------*/
+/*  4.1 cetagory css
+/*----------------------------------------*/
+.al-category-shop-slider .al-swiper-shop-scrollbar {
+  width: calc(100% - 200px);
+  margin: auto;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .al-category-shop-slider .al-swiper-shop-scrollbar {
+    width: calc(100% - 100px);
+  }
+}
+@media (max-width: 574.98px) {
+  .al-category-shop-slider .al-swiper-shop-scrollbar {
+    width: 100%;
+  }
+}
+.al-category-shop-item:hover .al-category-shop-title, .al-category-shop-item:hover .al-category-shop-btn, .al-category-shop-item:hover .al-category-shop-content span, .al-category-shop-item:hover .al-category-shop-content::after {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+.al-category-shop-item:hover .al-category-shop-title {
+  transition-delay: 0.5s;
+}
+.al-category-shop-item:hover .al-category-shop-btn {
+  transition-delay: 0.7s;
+}
+.al-category-shop-item:hover .al-category-shop-content span {
+  transition-delay: 0.3s;
+}
+.al-category-shop-item:hover .al-category-shop-content::after {
+  transition-delay: 0.1s;
+}
+.al-category-shop-title, .al-category-shop-btn, .al-category-shop-content span, .al-category-shop-content::after {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s 0s ease-out;
+  -moz-transition: all 0.3s 0s ease-out;
+  -ms-transition: all 0.3s 0s ease-out;
+  -o-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+}
+.al-category-shop-content {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  bottom: 14px;
+  right: 14px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.al-category-shop-content::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--tp-common-white);
+  z-index: -1;
+  -webkit-transition: all 0.3s 0s ease-out;
+  -moz-transition: all 0.3s 0s ease-out;
+  -ms-transition: all 0.3s 0s ease-out;
+  -o-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+  transition-delay: 0.7s;
+}
+.al-category-shop-content span {
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 3px;
+  transition-delay: 0.5s;
+  font-family: var(--tp-ff-dm);
+}
+.al-category-shop-title {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 17px;
+  transition-delay: 0.3s;
+  font-family: var(--tp-ff-dm);
+}
+.al-category-shop-title a:hover {
+  color: var(--tp-theme-secondary);
+}
+.al-category-shop-btn {
+  transition-delay: 0s;
+}
+.al-category-shop-btn .al-shop-btn-border {
+  font-size: 14px;
+  padding: 3px 15px;
+}
+.al-category-shop-btn .al-shop-btn-border:hover {
+  background: var(--tp-theme-secondary);
+  border-color: var(--tp-theme-secondary);
+  color: var(--tp-common-white);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 574.98px) {
+  .al-category-shop-thumb img {
+    width: 100%;
+  }
+}
+
+.al-swiper-shop-scrollbar {
+  background-color: #EDEFF2;
+  height: 2px !important;
+  -webkit-transition: all 0.3s 0s ease-out;
+  -moz-transition: all 0.3s 0s ease-out;
+  -ms-transition: all 0.3s 0s ease-out;
+  -o-transition: all 0.3s 0s ease-out;
+  transition: all 0.3s 0s ease-out;
+  position: relative !important;
+}
+.al-swiper-shop-scrollbar .al-swiper-scrollbar-drag {
+  background-color: var(--tp-common-black);
+  height: 100%;
+}
+.al-swiper-shop-scrollbar .al-swiper-scrollbar-drag:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=cetegory.css.map */
