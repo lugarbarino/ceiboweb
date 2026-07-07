@@ -1983,6 +1983,24 @@ mejora la performance y potencia el crecimiento de tu producto.">
    <script src="assets/js/slider-init.js"></script>
    <script src="assets/js/main.js"></script>
    <script src="assets/js/tp-cursor.js"></script>
+   <script>
+   (function () {
+      var els = document.querySelectorAll('.fade-up-anim');
+      if (!('IntersectionObserver' in window)) {
+         els.forEach(function (el) { el.classList.add('is-visible'); });
+         return;
+      }
+      var observer = new IntersectionObserver(function (entries, obs) {
+         entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+               entry.target.classList.add('is-visible');
+               obs.unobserve(entry.target);
+            }
+         });
+      }, { threshold: 0.15 });
+      els.forEach(function (el) { observer.observe(el); });
+   })();
+   </script>
 </body>
 
 </html>
